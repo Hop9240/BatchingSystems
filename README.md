@@ -118,3 +118,26 @@ Option 8 should show 4000 in finished-product tank 5.
 Its fat and solid results remain 0.00 because the program does not calculate new results after transferring batches.
 
 Choose option 9 to exit.
+
+## How to Run
+
+Install a Java Development Kit (JDK). This project was developed using Java 21.
+
+1. Click the green Code button and select Download ZIP.
+2. Extract the ZIP file.
+3. Open a terminal in the extracted project folder containing `src`.
+4. Compile the program:
+
+   ```text
+   javac -d out src/batchingsystems/*.java
+   ```
+
+5. Run the program:
+
+   ```text
+   java -cp out batchingsystems.BatchingSystems
+   ```
+
+Follow the menu prompts and use the Sample Inputs above to try a complete workflow.
+
+Inventory and batches are stored in memory and reset when the program closes.
